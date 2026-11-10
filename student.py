@@ -1,11 +1,22 @@
-student_name = "Rose Maina"
-registration_number = "BSCIT-01-0031/2026"
-course = "Bachelor of Science in Information Technology"
-year_of_study = 3
+#BSCIT-01-0031/2026
+#create a student dictionary
+student = {
+    "registration number": "BSCIT-01-0031/2026",
+    "student name":"Rose Maina",
+    "course":"information technology",
+    "year of study": 3
+}
 
-# iv. Display student information using print()
-print("--- Student Information ---")
-print("Student Name:       ", student_name)
-print("Registration Number:", registration_number)
-print("Course:             ", course)
-print("Year of Study:      ", year_of_study)
+#display student name and course
+print("student name:", student["student name"])
+print("course:", student["course"])
+
+#change the year of study
+student["year of study"] = 2
+
+#add an email address
+student["email"] = "maina@gmail.com"
+
+#display the updated disctionary
+print("\n updated student record:")
+print(student)
